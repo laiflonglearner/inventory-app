@@ -1,0 +1,11 @@
+# Enforce LF line endings for all text files
+* text=auto eol=lf
+
+# Ensure specific file types use LF
+*.cds text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.properties text eol=lf
+*.csv text eol=lf
+*.mjs text eol=lf
