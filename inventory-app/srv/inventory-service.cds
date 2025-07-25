@@ -23,5 +23,11 @@ service InventoryService @(path: '/inventory') {
     entity Stock as projection on db.Stock;
 
     // Action for updating stock
+    /* The returns String part is important. 
+       If the action is defined without a return type 
+       (e.g., action updateStock(materialId: String, quantityChange: Integer);), 
+       the CAP runtime treats it as a void action, result >> 204 No Content response.
+    */
     action updateStock(materialId: UUID, quantityChange: Integer) returns String;
+
 }
