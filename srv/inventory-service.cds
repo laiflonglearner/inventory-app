@@ -17,6 +17,20 @@ service InventoryService @(path: '/inventory') {
         In short: this line exposes Material entity
     */
     entity Materials as projection on db.Materials; 
+    // annotate Materials with @(
+    //     UI.LineItem: [
+    //     { Value: materialID, Label: 'Material ID' },
+    //     { Value: materialName, Label: 'Material Name' },
+    //     { Value: quantity, Label: 'Quantity' }
+    //     ],
+    //     UI.HeaderInfo: {
+    //     TypeName: 'Material',
+    //     TypeNamePlural: 'Materials',
+    //     Title: { Value: materialName }
+    //     }
+    // );
+
+
 
     // Same, this line exposes Stock entity from our data model (db.Stock)
     // through this service, making it accessible via OData.
