@@ -17,10 +17,12 @@
     "@cap-js/sqlite": "^2"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-materials-manage": "cds watch --open materials-manage/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
     "app/admin-books",
-    "app/browse"
+    "app/browse",
+    "app/materials-manage"
   ]
 }
