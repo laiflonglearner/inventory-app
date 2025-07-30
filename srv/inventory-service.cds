@@ -24,6 +24,7 @@ service InventoryService @(path: '/inventory') {
         UI.LineItem: [                  // Defines columns for the list view (table) in Fiori List Report
         { Value: ID, Label: 'ID' },     // Displays ID field with label "ID" in table
         { Value: name, Label: 'Name' },
+        { Value: description, Label: 'Description' },
         { Value: unit, Label: 'Unit' }
         ],
         UI.HeaderInfo: {                // Configures header for Object Page (detail view)
