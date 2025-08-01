@@ -7,9 +7,7 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^9.1.0",
-    "cds-mysql": "^7.9.0",
-    "express": "^4",
-    "mysql2": "^3.14.3"
+    "express": "^4"
   },
   "engines": {
     "node": ">=20"
