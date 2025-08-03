@@ -20,20 +20,6 @@ service InventoryService @(path: '/inventory') {
     // Same, this line exposes Stock entity from our data model (db.Stock)
     // through this service, making it accessible via OData.
 
-    annotate db.Materials with @(       // Adds metadata to db.Materials for SAP Fiori UI customization
-        UI.LineItem: [                  // Defines columns for the list view (table) in Fiori List Report
-        { Value: ID, Label: 'ID' },     // Displays ID field with label "ID" in table
-        { Value: name, Label: 'Name' },
-        { Value: description, Label: 'Description' },
-        { Value: unit, Label: 'Unit' }
-        ],
-        UI.HeaderInfo: {                // Configures header for Object Page (detail view)
-        TypeName: 'Material',           // Singular name for a single record
-        TypeNamePlural: 'Materials',    // Plural name for multiple records
-        Title: { Value: name }          // Uses name field as title for a record in Object Page
-        }
-    );
-
     entity Stock as projection on db.Stock;
 
     // Action for updating stock
