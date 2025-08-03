@@ -1,0 +1,18 @@
+{
+  "requires": {
+    "db": {
+      "kind": "sqlite",
+      "credentials": {
+        "url": "sqlite:db/inventory.db"
+      }
+    }
+  },
+  "[development]": {
+    "odata": {
+      "prefixServiceNamespace": false
+    },
+    "log": {
+      "level": "debug"
+    }
+  }
+}
