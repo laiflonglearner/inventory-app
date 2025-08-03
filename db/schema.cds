@@ -5,6 +5,8 @@ entity Materials : cuid {
   name        : String(100);
   description : String(255);
   unit        : String(10);
+  stock       : Association to Stock; 
+
   // A material can have many stock entries.
   // This association is implicit if Stock associates to Material.
   // Next: implement explicit association later
