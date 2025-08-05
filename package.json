@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@sap/cds-dk": "^9.2.0",
     "express": "^4"
   },
   "engines": {
